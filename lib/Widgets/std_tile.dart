@@ -6,7 +6,18 @@ class StdTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.redAccent,
+      height: 35,
+      width: 250,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0), color: Colors.grey[400]),
+      child: const Center(
+        child: Text(
+          "Priyadarshini Bal",
+          style: TextStyle(
+            color: Color(0xFF001257),
+          ),
+        ),
+      ),
     );
   }
 }
