@@ -1,1 +1,71 @@
-//testing
+import 'package:flutter/material.dart';
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 221, 228, 251),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            SizedBox(
+              height: 60,
+            ),
+            Image.asset(
+              "assets/logpic.png",
+              fit: BoxFit.cover,
+            ),
+            Column(
+              children: [
+                Text(
+                  "Student Management",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "System",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  "Veer Surendra Sai University of Technology",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                Text(
+                  "(Burla,Odisha)",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              // color: Colors.blue,
+              width: 120,
+              padding: EdgeInsets.all(20),
+              child: Center(
+                child: Text(
+                  "Get Started",
+                  style: TextStyle(fontSize: 10, color: Colors.white),
+                ),
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Color(0xFF001257),
+              ),
+            ),
+            SizedBox(
+              height: 60,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
