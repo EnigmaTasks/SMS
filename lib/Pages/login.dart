@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sms/Pages/home.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -11,14 +12,14 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60,
             ),
             Image.asset(
               "assets/logpic.png",
               fit: BoxFit.cover,
             ),
-            Column(
+            const Column(
               children: [
                 Text(
                   "Student Management",
@@ -45,22 +46,30 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              // color: Colors.blue,
-              width: 120,
-              padding: EdgeInsets.all(20),
-              child: Center(
-                child: Text(
-                  "Get Started",
-                  style: TextStyle(fontSize: 10, color: Colors.white),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomePage()),
+                );
+              },
+              child: Container(
+                // color: Colors.blue,
+                width: 120,
+                padding: EdgeInsets.all(20),
+                child: Center(
+                  child: Text(
+                    "Get Started",
+                    style: TextStyle(fontSize: 10, color: Colors.white),
+                  ),
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  color: Color(0xFF001257),
                 ),
               ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
-                color: Color(0xFF001257),
-              ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 60,
             )
           ],
