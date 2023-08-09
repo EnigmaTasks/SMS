@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/App Dev/SMS/SMS/windows/flutter"
+    "cmake.sourceDirectory": "C:/App Dev/SMS/SMS/windows/flutter",
+    "cmake.configureOnOpen": false
 }

@@ -9,6 +9,10 @@ class Block extends StatelessWidget {
     return Container(
       height: 137,
       width: 137,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20.0),
+        color: Colors.grey[400],
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -19,23 +23,19 @@ class Block extends StatelessWidget {
 
           Text(
             s1,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 25,
               color: Color(0xFF2E4090),
             ),
           ),
           Text(
             s2,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20,
               color: Color(0xFF5A5D72),
             ),
           )
         ],
-      ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
-        color: Colors.grey[400],
       ),
     );
   }

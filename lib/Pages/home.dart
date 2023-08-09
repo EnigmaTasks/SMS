@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sms/component/block.dart';
 import 'package:sms/component/block2.dart';
 
@@ -17,7 +16,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       //Appbar
       appBar: AppBar(
-        backgroundColor: Color(0xFF001257),
+        backgroundColor: const Color(0xFF001257),
         leading: IconButton(
           onPressed: () {},
           icon: const Icon(
@@ -104,7 +103,7 @@ class _HomePageState extends State<HomePage> {
             ),
             //Heading
             Container(
-              padding: EdgeInsets.only(left: 30),
+              padding: const EdgeInsets.only(left: 30),
               color: Colors.white,
               height: 55,
               alignment: Alignment.centerLeft,
@@ -112,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                 'Branches',
                 style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w500,
-                    color: Color(0xFF001257),
+                    color: const Color(0xFF001257),
                     fontSize: 30),
               ),
             ),

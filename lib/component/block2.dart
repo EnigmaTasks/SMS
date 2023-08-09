@@ -9,16 +9,16 @@ class Block2 extends StatelessWidget {
     return Container(
       height: 35,
       width: 250,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0), color: Colors.grey[400]),
       child: Center(
         child: Text(
           s3,
-          style: TextStyle(
+          style: const TextStyle(
             color: Color(0xFF001257),
           ),
         ),
       ),
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0), color: Colors.grey[400]),
     );
   }
 }
