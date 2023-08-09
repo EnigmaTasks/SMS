@@ -22,7 +22,9 @@ class _HomePageState extends State<HomePage> {
         leading: IconButton(
           onPressed: () {
             setState(() {
-              navId--;
+              if (navId <= 2) {
+                navId--;
+              }
             });
           },
           icon: const Icon(
@@ -44,12 +46,6 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            //Search,hello,tname
-            Container(
-              color: Colors.amber,
-              height: 200,
-            ),
-            //Heading
             Container(
               padding: const EdgeInsets.only(left: 40),
               color: const Color(0xFF001257),
@@ -91,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                         child: const TextField(
                           decoration: InputDecoration(
-                            hintText: 'search',
+                            hintText: 'Hinted Search Text',
                             border: InputBorder.none,
                             contentPadding: EdgeInsets.all(15.0),
                             suffixIcon: Icon(
@@ -106,6 +102,15 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            navId == 0
+                ? Row(
+                    children: [
+                      Text("Branches"),
+                    ],
+                  )
+                : navId == 1
+                    ? Text("Years")
+                    : Text("data"),
             //Body
             SizedBox(
               // color: Colors.greenAccent,
@@ -113,6 +118,7 @@ class _HomePageState extends State<HomePage> {
               width: 350,
               child: navId == 0
                   ? GridView.builder(
+                      // itemCount: 8,
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 2),

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sms/Pages/home.dart';
-import 'package:sms/Pages/login.dart';
-import 'package:sms/Pages/profilepage.dart';
 
 int navId = 0;
 
@@ -20,6 +18,7 @@ class _MaterialAppBaseState extends State<MaterialAppBase> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       //Themes
       home: HomePage(),
       // home: LoginPage(),
