@@ -216,7 +216,7 @@ class _HomePageState extends State<HomePage> {
                                 const SliverGridDelegateWithFixedCrossAxisCount(
                                     mainAxisSpacing: 25,
                                     crossAxisCount: 1,
-                                    mainAxisExtent: 90),
+                                    mainAxisExtent: 70),
                             itemBuilder: ((context, index) {
                               return StdTile();
                             }),
