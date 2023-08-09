@@ -58,13 +58,6 @@ class BranchTile extends StatelessWidget {
                   )
                 ],
               )
-              // Text(
-              //   "Chemical Engineering",
-              //   style: TextStyle(
-              //     fontSize: 20,
-              //     color: Color(0xFF5A5D72),
-              //   ),
-              // )
             ],
           ),
         ),

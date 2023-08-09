@@ -6,8 +6,18 @@ class YearTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green,
-      child: Center(child: Text("2006- 2239")),
+      height: 35,
+      width: 250,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0), color: Colors.grey[400]),
+      child: const Center(
+        child: Text(
+          "2023-2024",
+          style: TextStyle(
+            color: Color(0xFF001257),
+          ),
+        ),
+      ),
     );
   }
 }
