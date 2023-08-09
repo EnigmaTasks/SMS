@@ -14,25 +14,55 @@ class BranchTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(20.0),
           color: Colors.grey[400],
         ),
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              'ChE',
-              style: TextStyle(
-                fontSize: 25,
-                color: Color(0xFF2E4090),
+        child: const Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    'ChE',
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Color(0xFF2E4090),
+                    ),
+                  ),
+                ],
               ),
-            ),
-            Text(
-              "Chemical Engineering",
-              style: TextStyle(
-                fontSize: 20,
-                color: Color(0xFF5A5D72),
-              ),
-            )
-          ],
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            "Chemical",
+                            style: TextStyle(
+                                fontSize: 20, color: Color(0xFF5A5D72)),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text("Engineering",
+                              style: TextStyle(
+                                  fontSize: 20, color: Color(0xFF5A5D72))),
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              )
+              // Text(
+              //   "Chemical Engineering",
+              //   style: TextStyle(
+              //     fontSize: 20,
+              //     color: Color(0xFF5A5D72),
+              //   ),
+              // )
+            ],
+          ),
         ),
       ),
     );
