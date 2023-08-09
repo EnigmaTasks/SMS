@@ -19,7 +19,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: const Color(0xFF001257),
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            setState(() {
+              navId--;
+            });
+          },
           icon: const Icon(
             Icons.arrow_back,
             color: Colors.white,

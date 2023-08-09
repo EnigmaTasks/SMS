@@ -21,8 +21,8 @@ class _MaterialAppBaseState extends State<MaterialAppBase> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       //Themes
-      // home: HomePage(),
-      home: LoginPage(),
+      home: HomePage(),
+      // home: LoginPage(),
       // home: ProfilePage(),
     );
   }
