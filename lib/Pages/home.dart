@@ -50,8 +50,60 @@ class _HomePageState extends State<HomePage> {
             ),
             //Heading
             Container(
-              // color: Colors.white,
-              height: 40,
+              padding: const EdgeInsets.only(left: 40),
+              color: const Color(0xFF001257),
+              height: 200,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'Hello',
+                        style: GoogleFonts.poppins(
+                            fontSize: 38,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "Teacher's Name",
+                        style: GoogleFonts.poppins(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xFFDFE1F9)),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: 320.0,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(100.0),
+                        ),
+                        child: const TextField(
+                          decoration: InputDecoration(
+                            hintText: 'search',
+                            border: InputBorder.none,
+                            contentPadding: EdgeInsets.all(15.0),
+                            suffixIcon: Icon(
+                              Icons.search,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             ),
             //Body
             SizedBox(
