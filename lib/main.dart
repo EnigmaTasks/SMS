@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sms/Pages/home.dart';
 
+int navId = 0;
+
 void main(List<String> args) {
   runApp(const MaterialAppBase());
 }
