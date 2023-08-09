@@ -104,19 +104,19 @@ class _HomePageState extends State<HomePage> {
             ),
             navId == 0
                 ? Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(left: 25.0, top: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                          height: 20,
+                          height: 40,
                           child: Center(
                             child: Text(
                               "Branches",
                               style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF001257),
-                                  fontSize: 30),
+                                  fontSize: 25),
                             ),
                           ),
                         ),
@@ -125,19 +125,19 @@ class _HomePageState extends State<HomePage> {
                   )
                 : navId == 1
                     ? Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.only(left: 25.0, top: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             SizedBox(
-                              height: 20,
+                              height: 40,
                               child: Center(
                                 child: Text(
                                   "Year",
                                   style: GoogleFonts.poppins(
                                       fontWeight: FontWeight.w500,
                                       color: const Color(0xFF001257),
-                                      fontSize: 30),
+                                      fontSize: 25),
                                 ),
                               ),
                             ),
@@ -145,19 +145,19 @@ class _HomePageState extends State<HomePage> {
                         ),
                       )
                     : Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.only(left: 25.0, top: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             SizedBox(
-                              height: 20,
+                              height: 40,
                               child: Center(
                                 child: Text(
                                   "Student List",
                                   style: GoogleFonts.poppins(
                                       fontWeight: FontWeight.w500,
                                       color: const Color(0xFF001257),
-                                      fontSize: 30),
+                                      fontSize: 25),
                                 ),
                               ),
                             ),
