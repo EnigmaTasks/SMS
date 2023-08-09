@@ -3,6 +3,8 @@ import 'package:sms/Pages/home.dart';
 import 'package:sms/Pages/login.dart';
 import 'package:sms/Pages/profilepage.dart';
 
+int navId = 0;
+
 void main(List<String> args) {
   runApp(const MaterialAppBase());
 }
