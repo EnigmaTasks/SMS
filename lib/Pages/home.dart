@@ -103,14 +103,49 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             navId == 0
-                ? Row(
-                    children: [
-                      Text("Branches"),
-                    ],
+                ? const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 20,
+                          child: Center(
+                            child: Text("Branches"),
+                          ),
+                        ),
+                      ],
+                    ),
                   )
                 : navId == 1
-                    ? Text("Years")
-                    : Text("data"),
+                    ? const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                              child: Center(
+                                child: Text("Year"),
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    : const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                              child: Center(
+                                child: Text("Student List"),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
             //Body
             SizedBox(
               // color: Colors.greenAccent,
