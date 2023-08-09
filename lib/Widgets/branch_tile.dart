@@ -12,7 +12,7 @@ class BranchTile extends StatelessWidget {
         width: 137,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
-          color: Color.fromARGB(242, 242, 242, 1),
+          color: Color(0xF2F2F2),
         ),
         child: const Center(
           child: Column(
