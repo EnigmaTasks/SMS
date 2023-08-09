@@ -18,7 +18,7 @@ class YearTile extends StatelessWidget {
           "2023-2024",
           style: TextStyle(
             color: Color(0xFF2E4090),
-            fontSize: 30,
+            fontSize: 25,
           ),
         ),
       ),

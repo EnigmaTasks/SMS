@@ -8,36 +8,39 @@ class StdTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
+        borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(6), bottomRight: Radius.circular(6)),
         color: Colors.grey[200],
-        boxShadow: [BoxShadow(blurRadius: 12.0)],
+        boxShadow: [BoxShadow(blurRadius: 5.0)],
       ),
       child: Center(
-        child: Column(
-          children: [
-            const Row(
-              children: [
-                Text(
-                  "Priyadarshini Bal",
-                  style: TextStyle(
-                    color: Color(0xFF2E4090),
-                    fontSize: 25,
+        child: Center(
+          child: Column(
+            children: [
+              const Row(
+                children: [
+                  Text(
+                    "Priyadarshini Bal",
+                    style: TextStyle(
+                      color: Color(0xFF2E4090),
+                      fontSize: 25,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Text(
-                  "2102031097",
-                  style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w500,
-                      color: const Color(0xFF5A5D72),
-                      fontSize: 10),
-                ),
-              ],
-            ),
-          ],
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "2102031097",
+                    style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFF5A5D72),
+                        fontSize: 18),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
