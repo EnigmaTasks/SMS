@@ -19,7 +19,8 @@ class LoginPage extends StatelessWidget {
               "assets/logpic.png",
               fit: BoxFit.cover,
             ),
-            const Column(
+           Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "Student Management",
