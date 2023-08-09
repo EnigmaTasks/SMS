@@ -9,12 +9,16 @@ class YearTile extends StatelessWidget {
       height: 35,
       width: 250,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0), color: Colors.grey[400]),
+        borderRadius: BorderRadius.circular(10.0),
+        color: Colors.grey[200],
+        boxShadow: [BoxShadow(blurRadius: 12.0)],
+      ),
       child: const Center(
         child: Text(
           "2023-2024",
           style: TextStyle(
-            color: Color(0xFF001257),
+            color: Color(0xFF2E4090),
+            fontSize: 30,
           ),
         ),
       ),
