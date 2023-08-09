@@ -16,6 +16,7 @@ class _MaterialAppBaseState extends State<MaterialAppBase> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       //Themes
       home: HomePage(),
     );
