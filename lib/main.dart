@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sms/Pages/home.dart';
 
-void main(List<String> args) {}
+void main(List<String> args) {
+  runApp(const MaterialAppBase());
+}
 
 class MaterialAppBase extends StatefulWidget {
   const MaterialAppBase({super.key});
@@ -12,6 +15,9 @@ class MaterialAppBase extends StatefulWidget {
 class _MaterialAppBaseState extends State<MaterialAppBase> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const MaterialApp(
+      //Themes
+      home: HomePage(),
+    );
   }
 }
