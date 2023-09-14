@@ -14,6 +14,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   //Add arrays here
+  List studentList = [];
+  List rollList = [];
+  List yearList = ['2023 - 2024', '2022 - 2023', '2021 - 2022', '2020 - 2021'];
+  List branchFull = [];
+  List branchShort = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
