@@ -7,7 +7,7 @@ class YearTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 35,
+      height: 55,
       width: 250,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),

@@ -265,7 +265,10 @@ class _HomePageState extends State<HomePage> {
                             itemCount: yearList.length,
                             scrollDirection: Axis.vertical,
                             itemBuilder: (context, index) {
-                              return YearTile(year: yearList[index]);
+                              return Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: YearTile(year: yearList[index]),
+                              );
                             },
                           ))
                       : GestureDetector(
