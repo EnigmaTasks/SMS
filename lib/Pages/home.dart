@@ -198,23 +198,15 @@ class _HomePageState extends State<HomePage> {
               height: 700,
               width: 350,
               child: navId == 0
-                  ? GridView.builder(
-                      // itemCount: 8,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2),
-                      itemBuilder: ((context, index) {
-                        return GestureDetector(
-                          onTap: () {
-                            setState(
-                              () {
-                                navId++;
-                              },
-                            );
-                          },
-                          child: const BranchTile(),
+                  ? ListView.builder(
+                      itemCount: studentList.length,
+                      scrollDirection: Axis.vertical,
+                      itemBuilder: (context, index) {
+                        return StdTile(
+                          stdName: studentList[index],
+                          rollNo: rollList[index],
                         );
-                      }),
+                      },
                     )
                   : navId == 1
                       ? GestureDetector(
