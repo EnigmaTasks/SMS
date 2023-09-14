@@ -79,17 +79,17 @@ class LoginPage extends StatelessWidget {
             ),
             Column(
               children: [
-                Text(
+                const Text(
                   "Made by web and coding club",
                   style: TextStyle(
                     fontSize: 15,
                   ),
                 ),
-                Text(
+                const Text(
                   "<ENIGMA>",
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Image.asset(

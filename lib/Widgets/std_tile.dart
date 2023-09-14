@@ -47,12 +47,12 @@ class StdTile extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(left: 10),
                       ),
                       Text(
                         stdName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF2E4090),
                           fontSize: 20,
                         ),
@@ -61,7 +61,7 @@ class StdTile extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(left: 10),
                       ),
                       Text(

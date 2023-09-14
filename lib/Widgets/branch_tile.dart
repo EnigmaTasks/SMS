@@ -45,7 +45,7 @@ class BranchTile extends StatelessWidget {
                 children: [
                   Text(
                     short,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 25,
                       color: Color(0xFF2E4090),
                     ),
@@ -62,7 +62,7 @@ class BranchTile extends StatelessWidget {
                         children: [
                           Text(
                             branchSs,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 20, color: Color(0xFF5A5D72)),
                           ),
                         ],
@@ -71,7 +71,7 @@ class BranchTile extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(branchTi,
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 20, color: Color(0xFF5A5D72))),
                         ],
                       )
