@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
           onPressed: () {
             setState(
               () {
-                if (navId <= 2) {
+                if (navId <= 2 && navId != 0) {
                   navId--;
                 }
               },
@@ -232,19 +232,26 @@ class _HomePageState extends State<HomePage> {
               height: 700,
               width: 350,
               child: navId == 0
-                  ? GridView.builder(
-                      itemCount: branchFull1.length,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                              mainAxisSpacing: 20,
-                              crossAxisCount: 2,
-                              mainAxisExtent: 140),
-                      itemBuilder: ((context, index) {
-                        return BranchTile(
-                            branchSs: branchFull1[index],
-                            branchTi: branchFull2[index],
-                            short: branchShort[index]);
-                      }),
+                  ? GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          navId++;
+                        });
+                      },
+                      child: GridView.builder(
+                        itemCount: branchFull1.length,
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                                mainAxisSpacing: 20,
+                                crossAxisCount: 2,
+                                mainAxisExtent: 140),
+                        itemBuilder: ((context, index) {
+                          return BranchTile(
+                              branchSs: branchFull1[index],
+                              branchTi: branchFull2[index],
+                              short: branchShort[index]);
+                        }),
+                      ),
                     )
                   : navId == 1
                       ? GestureDetector(
