@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class BranchTile extends StatelessWidget {
-  const BranchTile({super.key});
+  final String branchSs;
+  final String branchTi;
+  final String short;
+  const BranchTile(
+      {super.key,
+      required this.branchSs,
+      required this.branchTi,
+      required this.short});
 
   @override
   Widget build(BuildContext context) {

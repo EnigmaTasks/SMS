@@ -1,0 +1,3 @@
+["ChE","CE","CSE","EE","EEE","ETC","IT","ME","MME","PE"]
+["Chemical","Civil","Computer","Electrical","Electrical&","Electronics&","Information","Mechanical","Metallurgy&","Production"]
+["Engineering","Engineering","Science","Engineering","Electronics","Telecommunication","Technology","Engineering","Materials","Engineering"]

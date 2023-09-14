@@ -198,20 +198,15 @@ class _HomePageState extends State<HomePage> {
               height: 700,
               width: 350,
               child: navId == 0
-                  ? GridView.builder(
-                      // itemCount: 8,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2),
-                      itemBuilder: ((context, index) {
-                        return GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                navId++;
-                              });
-                            },
-                            child: const BranchTile());
-                      }),
+                  ? ListView.builder(
+                      itemCount: studentList.length,
+                      scrollDirection: Axis.vertical,
+                      itemBuilder: (context, index) {
+                        return StdTile(
+                          stdName: studentList[index],
+                          rollNo: rollList[index],
+                        );
+                      },
                     )
                   : navId == 1
                       ? GestureDetector(
@@ -220,34 +215,28 @@ class _HomePageState extends State<HomePage> {
                               navId++;
                             });
                           },
-                          child: GridView.builder(
-                            itemCount: 4,
-                            padding: const EdgeInsets.all(10),
-                            gridDelegate:
-                                const SliverGridDelegateWithFixedCrossAxisCount(
-                                    mainAxisSpacing: 25,
-                                    crossAxisCount: 1,
-                                    mainAxisExtent: 55),
-                            itemBuilder: ((context, index) {
-                              return const YearTile();
-                            }),
-                          ),
-                        )
+                          child: ListView.builder(
+                            itemCount: yearList.length,
+                            scrollDirection: Axis.vertical,
+                            itemBuilder: (context, index) {
+                              return YearTile(year: yearList[index]);
+                            },
+                          ))
                       : GestureDetector(
                           onTap: () {
                             setState(() {
                               navId++;
                             });
                           },
-                          child: GridView.builder(
-                            gridDelegate:
-                                const SliverGridDelegateWithFixedCrossAxisCount(
-                                    mainAxisSpacing: 25,
-                                    crossAxisCount: 1,
-                                    mainAxisExtent: 70),
-                            itemBuilder: ((context, index) {
-                              return const StdTile();
-                            }),
+                          child: ListView.builder(
+                            itemCount: studentList.length,
+                            scrollDirection: Axis.vertical,
+                            itemBuilder: (context, index) {
+                              return StdTile(
+                                stdName: studentList[index],
+                                rollNo: rollList[index],
+                              );
+                            },
                           ),
                         ),
             )

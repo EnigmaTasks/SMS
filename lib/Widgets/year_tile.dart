@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class YearTile extends StatelessWidget {
-  const YearTile({super.key});
+  final String year;
+  const YearTile({super.key, required this.year});
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +14,10 @@ class YearTile extends StatelessWidget {
         color: Colors.grey[200],
         boxShadow: const [BoxShadow(blurRadius: 5.0)],
       ),
-      child: const Center(
+      child: Center(
         child: Text(
-          "2023-2024",
-          style: TextStyle(
+          year,
+          style: const TextStyle(
             color: Color(0xFF2E4090),
             fontSize: 25,
           ),
