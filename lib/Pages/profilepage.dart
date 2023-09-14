@@ -92,8 +92,22 @@ class ProfilePage extends StatelessWidget {
                   Container(
                     height: 250,
                     decoration: BoxDecoration(
-                        color: Colors.blueGrey[50],
-                        borderRadius: BorderRadius.circular(12)),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.grey[200],
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 15.0,
+                          offset: const Offset(6, 6),
+                          spreadRadius: 1,
+                          color: Colors.blueGrey.shade500,
+                        ),
+                        const BoxShadow(
+                            blurRadius: 5.0,
+                            offset: Offset(-6, -6),
+                            spreadRadius: 1,
+                            color: Colors.white)
+                      ],
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -125,8 +139,22 @@ class ProfilePage extends StatelessWidget {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.blueGrey[50],
-                        borderRadius: BorderRadius.circular(12)),
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.grey[200],
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 15.0,
+                          offset: const Offset(6, 6),
+                          spreadRadius: 1,
+                          color: Colors.blueGrey.shade500,
+                        ),
+                        const BoxShadow(
+                            blurRadius: 5.0,
+                            offset: Offset(-6, -6),
+                            spreadRadius: 1,
+                            color: Colors.white)
+                      ],
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [

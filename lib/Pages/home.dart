@@ -100,6 +100,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {},
             icon: const Icon(
               Icons.person,
+              color: Colors.white,
             ),
           ),
         ],
