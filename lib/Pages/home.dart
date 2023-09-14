@@ -37,8 +37,42 @@ class _HomePageState extends State<HomePage> {
     "2202041009"
   ];
   List yearList = ['2023 - 2024', '2022 - 2023', '2021 - 2022', '2020 - 2021'];
-  List branchFull = [];
-  List branchShort = [];
+  List branchFull1 = [
+    "Chemical",
+    "Civil",
+    "Computer",
+    "Electrical",
+    "Electrical&",
+    "Electronics&",
+    "Information",
+    "Mechanical",
+    "Metallurgy&",
+    "Production"
+  ];
+  List branchFull2 = [
+    "Engineering",
+    "Engineering",
+    "Science",
+    "Engineering",
+    "Electronics",
+    "Telecomm",
+    "Technology",
+    "Engineering",
+    "Materials",
+    "Engineering"
+  ];
+  List branchShort = [
+    "ChE",
+    "CE",
+    "CSE",
+    "EE",
+    "EEE",
+    "ETC",
+    "IT",
+    "ME",
+    "MME",
+    "PE"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -198,15 +232,19 @@ class _HomePageState extends State<HomePage> {
               height: 700,
               width: 350,
               child: navId == 0
-                  ? ListView.builder(
-                      itemCount: studentList.length,
-                      scrollDirection: Axis.vertical,
-                      itemBuilder: (context, index) {
-                        return StdTile(
-                          stdName: studentList[index],
-                          rollNo: rollList[index],
-                        );
-                      },
+                  ? GridView.builder(
+                      itemCount: branchFull1.length,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              mainAxisSpacing: 20,
+                              crossAxisCount: 2,
+                              mainAxisExtent: 140),
+                      itemBuilder: ((context, index) {
+                        return BranchTile(
+                            branchSs: branchFull1[index],
+                            branchTi: branchFull2[index],
+                            short: branchShort[index]);
+                      }),
                     )
                   : navId == 1
                       ? GestureDetector(

@@ -4,6 +4,7 @@ class BranchTile extends StatelessWidget {
   final String branchSs;
   final String branchTi;
   final String short;
+
   const BranchTile(
       {super.key,
       required this.branchSs,
@@ -34,7 +35,7 @@ class BranchTile extends StatelessWidget {
                 color: Colors.white)
           ],
         ),
-        child: const Center(
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -43,7 +44,7 @@ class BranchTile extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'ChE',
+                    short,
                     style: TextStyle(
                       fontSize: 25,
                       color: Color(0xFF2E4090),
@@ -60,7 +61,7 @@ class BranchTile extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Chemical",
+                            branchSs,
                             style: TextStyle(
                                 fontSize: 20, color: Color(0xFF5A5D72)),
                           ),
@@ -69,7 +70,7 @@ class BranchTile extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text("Engineering",
+                          Text(branchTi,
                               style: TextStyle(
                                   fontSize: 20, color: Color(0xFF5A5D72))),
                         ],
