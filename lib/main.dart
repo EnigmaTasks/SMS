@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sms/Pages/home.dart';
 import 'package:sms/Pages/login.dart';
+import 'package:sms/Pages/profilepage.dart';
 
 int navId = 0;
 

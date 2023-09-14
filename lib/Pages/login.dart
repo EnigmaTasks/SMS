@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
               "assets/logpic.png",
               fit: BoxFit.cover,
             ),
-           Column(
+            Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
@@ -34,7 +34,13 @@ class LoginPage extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  "Veer Surendra Sai University of Technology",
+                  "Veer Surendra Sai",
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                Text(
+                  "University of Technology",
                   style: TextStyle(
                     fontSize: 20,
                   ),
