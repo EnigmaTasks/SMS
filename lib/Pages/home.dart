@@ -14,8 +14,28 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   //Add arrays here
-  List studentList = [];
-  List rollList = [];
+  List studentList = [
+    "Ankush Behera",
+    "Sagar Satapathy",
+    "Debasish Dey",
+    "Swayam Prakash Choudhury",
+    "Aryaman Jena",
+    "Nikhilesh Sahu",
+    "Debakanta Pradhan",
+    "Satyajit Pradhan",
+    "Amisha Samal"
+  ];
+  List rollList = [
+    "2202041001",
+    "2202041002",
+    "2202041003",
+    "2202041004",
+    "2202041005",
+    "2202041006",
+    "2202041007",
+    "2202041008",
+    "2202041009"
+  ];
   List yearList = ['2023 - 2024', '2022 - 2023', '2021 - 2022', '2020 - 2021'];
   List branchFull = [];
   List branchShort = [];
