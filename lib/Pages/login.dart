@@ -13,11 +13,24 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const SizedBox(
-              height: 60,
+              height: 5,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Image.asset(
+                  "assets/logo.png",
+                  height: 40,
+                ),
+                SizedBox(
+                  width: 20,
+                )
+              ],
             ),
             Image.asset(
               "assets/logpic.png",
               fit: BoxFit.cover,
+              height: 300,
             ),
             const Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -76,9 +89,27 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
+            Column(
+              children: [
+                Text(
+                  "Made by web and coding club",
+                  style: TextStyle(
+                    fontSize: 15,
+                  ),
+                ),
+                Text(
+                  "<ENIGMA>",
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+                // Image.asset(
+                //   "assets/logo.png",
+                //   height: 40,
+                // ),
+              ],
+            ),
             const SizedBox(
               height: 60,
-            )
+            ),
           ],
         ),
       ),
