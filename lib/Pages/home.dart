@@ -239,6 +239,7 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                       child: GridView.builder(
+                        reverse: false,
                         itemCount: branchFull1.length,
                         gridDelegate:
                             const SliverGridDelegateWithFixedCrossAxisCount(

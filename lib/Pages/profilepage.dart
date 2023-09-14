@@ -11,7 +11,12 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF001257),
         elevation: 0,
-        leading: const Icon(Icons.arrow_back),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10.0),
