@@ -3,7 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sms/Pages/profilepage.dart';
 
 class StdTile extends StatelessWidget {
-  const StdTile({super.key});
+  final String stdName;
+  final String rollNo;
+
+  const StdTile({
+    super.key,
+    required this.stdName,
+    required this.rollNo,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +22,7 @@ class StdTile extends StatelessWidget {
         );
       },
       child: Container(
-        margin: const EdgeInsets.all(5),
+        margin: EdgeInsets.all(5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: Colors.grey[200],
@@ -36,13 +43,13 @@ class StdTile extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                const Row(
+                Row(
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left: 10),
                     ),
                     Text(
-                      "Debasish Dey",
+                      stdName,
                       style: TextStyle(
                         color: Color(0xFF2E4090),
                         fontSize: 20,
@@ -52,11 +59,11 @@ class StdTile extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.only(left: 10),
                     ),
                     Text(
-                      "2202040017",
+                      rollNo,
                       style: GoogleFonts.poppins(
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFF5A5D72),
