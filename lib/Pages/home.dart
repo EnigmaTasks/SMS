@@ -18,12 +18,12 @@ class _HomePageState extends State<HomePage> {
     "Ankush Behera",
     "Sagar Satapathy",
     "Debasish Dey",
+    "Pratyush Panda",
+    "Nitesh Kumar Yadav",
     "Swayam Prakash Choudhury",
     "Aryaman Jena",
     "Nikhilesh Sahu",
     "Debakanta Pradhan",
-    "Satyajit Pradhan",
-    "Amisha Samal"
   ];
   List rollList = [
     "2202041001",
@@ -262,6 +262,7 @@ class _HomePageState extends State<HomePage> {
                             });
                           },
                           child: ListView.builder(
+                            padding: EdgeInsets.all(0),
                             itemCount: yearList.length,
                             scrollDirection: Axis.vertical,
                             itemBuilder: (context, index) {
