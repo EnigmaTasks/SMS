@@ -108,21 +108,25 @@ class _HomePageState extends State<HomePage> {
       //Heading
       body: SingleChildScrollView(
         child: Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.only(left: 40),
-            
+              // padding: const EdgeInsets.only(left: 40),
               height: 200,
-              decoration: BoxDecoration(
-                color: const Color(0xFF001257),
-               borderRadius: BorderRadius.only(
+              decoration: const BoxDecoration(
+                  color: Color(0xFF001257),
+                  borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(25),
-                      bottomRight: Radius.circular(25))
-              ),
+                      bottomRight: Radius.circular(25))),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Row(
+                    // mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
+                      const SizedBox(
+                        width: 40,
+                      ),
                       Text(
                         'Hello',
                         style: GoogleFonts.poppins(
@@ -134,6 +138,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Row(
                     children: [
+                      const SizedBox(
+                        width: 40,
+                      ),
                       Text(
                         "Teacher's Name",
                         style: GoogleFonts.poppins(
@@ -146,31 +153,52 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        width: 320.0,
-                        decoration: BoxDecoration(
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     Container(
+                  //       width: 320.0,
+                  //       decoration: BoxDecoration(
+                  //         color: Colors.white,
+                  //         borderRadius: BorderRadius.circular(100.0),
+                  //       ),
+                  //       child: const TextField(
+                  //         decoration: InputDecoration(
+                  //           hintText: 'Hinted Search Text',
+                  //           border: InputBorder.none,
+                  //           contentPadding: EdgeInsets.all(15.0),
+                  //           suffixIcon: Icon(
+                  //             Icons.search,
+                  //             color: Colors.black,
+                  //           ),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // )
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(100.0),
-                        ),
-                        child: const TextField(
-                          decoration: InputDecoration(
-                            hintText: 'Hinted Search Text',
-                            border: InputBorder.none,
-                            contentPadding: EdgeInsets.all(15.0),
-                            suffixIcon: Icon(
-                              Icons.search,
-                              color: Colors.black,
-                            ),
+                          borderRadius: BorderRadius.circular(25)),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Hinted Search Text',
+                          border: InputBorder.none,
+                          contentPadding: EdgeInsets.all(15.0),
+                          suffixIcon: Icon(
+                            Icons.search,
+                            color: Colors.black,
                           ),
                         ),
                       ),
-                    ],
-                  )
+                    ),
+                  ),
                 ],
               ),
             ),
+
             navId == 0
                 ? Padding(
                     padding: const EdgeInsets.only(left: 25.0, top: 10),
