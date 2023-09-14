@@ -12,7 +12,18 @@ class YearTile extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
         color: Colors.grey[200],
-        boxShadow: const [BoxShadow(blurRadius: 5.0)],
+        boxShadow: [
+          BoxShadow(
+              blurRadius: 15.0,
+              offset: const Offset(6, 6),
+              spreadRadius: 1,
+              color: Colors.grey.shade500),
+          const BoxShadow(
+              blurRadius: 5.0,
+              offset: Offset(-6, -6),
+              spreadRadius: 1,
+              color: Colors.white)
+        ],
       ),
       child: Center(
         child: Text(
