@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 221, 228, 251),
+      backgroundColor: const Color.fromARGB(255, 221, 228, 251),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
               "assets/logpic.png",
               fit: BoxFit.cover,
             ),
-            Column(
+            const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
@@ -63,16 +63,16 @@ class LoginPage extends StatelessWidget {
               child: Container(
                 // color: Colors.blue,
                 width: 120,
-                padding: EdgeInsets.all(20),
-                child: Center(
+                padding: const EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  color: const Color(0xFF001257),
+                ),
+                child: const Center(
                   child: Text(
                     "Get Started",
                     style: TextStyle(fontSize: 10, color: Colors.white),
                   ),
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(25),
-                  color: Color(0xFF001257),
                 ),
               ),
             ),

@@ -9,15 +9,15 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF001257),
+        backgroundColor: const Color(0xFF001257),
         elevation: 0,
-        leading: Icon(Icons.arrow_back),
+        leading: const Icon(Icons.arrow_back),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Container(
               alignment: Alignment.center,
-              child: CircleAvatar(
+              child: const CircleAvatar(
                 radius: 25,
                 backgroundImage: AssetImage("assets/logpic.png"),
               ),
@@ -29,8 +29,8 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(8),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.all(8),
+              decoration: const BoxDecoration(
                   color: Color(0xFF001257),
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(25),
@@ -41,24 +41,24 @@ class ProfilePage extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       alignment: Alignment.center,
-                      child: CircleAvatar(
+                      child: const CircleAvatar(
                         radius: 60,
                         backgroundImage: AssetImage("assets/logpic.png"),
                       ),
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Sagarspt01",
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     "2202041056",
                     style: TextStyle(fontSize: 15, color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   )
                 ],
@@ -69,7 +69,7 @@ class ProfilePage extends StatelessWidget {
               child: Column(
                 children: [
                   //Padding(padding: EdgeInsets.all(20)),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
@@ -81,7 +81,7 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
@@ -100,10 +100,10 @@ class ProfilePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Text(
@@ -115,7 +115,7 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(

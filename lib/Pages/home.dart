@@ -21,11 +21,13 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color(0xFF001257),
         leading: IconButton(
           onPressed: () {
-            setState(() {
-              if (navId <= 2) {
-                navId--;
-              }
-            });
+            setState(
+              () {
+                if (navId <= 2) {
+                  navId--;
+                }
+              },
+            );
           },
           icon: const Icon(
             Icons.arrow_back,
@@ -182,7 +184,7 @@ class _HomePageState extends State<HomePage> {
                                 navId++;
                               });
                             },
-                            child: BranchTile());
+                            child: const BranchTile());
                       }),
                     )
                   : navId == 1
@@ -201,7 +203,7 @@ class _HomePageState extends State<HomePage> {
                                     crossAxisCount: 1,
                                     mainAxisExtent: 55),
                             itemBuilder: ((context, index) {
-                              return YearTile();
+                              return const YearTile();
                             }),
                           ),
                         )
@@ -218,7 +220,7 @@ class _HomePageState extends State<HomePage> {
                                     crossAxisCount: 1,
                                     mainAxisExtent: 70),
                             itemBuilder: ((context, index) {
-                              return StdTile();
+                              return const StdTile();
                             }),
                           ),
                         ),

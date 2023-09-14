@@ -18,12 +18,12 @@ class Details extends StatelessWidget {
         children: [
           Text(
             first,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 22, color: Color.fromARGB(255, 36, 55, 134)),
           ),
           Text(
             last,
-            style: TextStyle(fontSize: 20),
+            style: const TextStyle(fontSize: 20),
           )
         ],
       ),

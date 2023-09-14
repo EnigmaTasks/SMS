@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sms/Pages/profilepage.dart';
-import 'package:sms/component/detail.dart';
 
 class StdTile extends StatelessWidget {
   const StdTile({super.key});
@@ -12,21 +11,21 @@ class StdTile extends StatelessWidget {
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => ProfilePage()),
+          MaterialPageRoute(builder: (context) => const ProfilePage()),
         );
       },
       child: Container(
-        margin: EdgeInsets.all(5),
+        margin: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: Colors.grey[200],
           boxShadow: [
             BoxShadow(
                 blurRadius: 15.0,
-                offset: Offset(6, 6),
+                offset: const Offset(6, 6),
                 spreadRadius: 1,
                 color: Colors.grey.shade500),
-            BoxShadow(
+            const BoxShadow(
                 blurRadius: 5.0,
                 offset: Offset(-6, -6),
                 spreadRadius: 1,
@@ -53,7 +52,7 @@ class StdTile extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.only(left: 10),
                     ),
                     Text(
