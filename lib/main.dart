@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sms/Pages/home.dart';
+import 'package:sms/Pages/login.dart';
 
 int navId = 0;
 
@@ -20,8 +21,8 @@ class _MaterialAppBaseState extends State<MaterialAppBase> {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       //Themes
-      home: HomePage(),
-      // home: LoginPage(),
+      // home: HomePage(),
+      home: LoginPage(),
       // home: ProfilePage(),
     );
   }
